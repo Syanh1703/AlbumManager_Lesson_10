@@ -1,8 +1,10 @@
 package com.example.albummanager
 
 data class MyDataItem(
-    val body: String,
+    //Must have the same name with the json link
+    val albumId :Int,
     val id: Int,
     val title: String,
-    val userId: Int
+    val url:String,
+    val thumbnailUrl: String
 )

@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var linearLayoutManager: LinearLayoutManager
     private lateinit var itemList: ArrayList<MyDataItem>
     companion object {
-        const val BASE_URL = "https://jsonplaceholder.typicode.com/"
+        const val BASE_URL = "https://jsonplaceholder.typicode.com"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,7 +61,6 @@ class MainActivity : AppCompatActivity() {
                 //Print data to the Recycler View
                 itemAdapters = ItemAdapters(baseContext, responseBody)
                 rvPhotoList.adapter = itemAdapters
-
             }
 
 

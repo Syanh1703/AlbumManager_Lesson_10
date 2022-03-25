@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ApiInterface {
     //Get Request
-    @GET("posts")//The last word of the URL
+    @GET("/photos")//The last word of the URL
     fun getData():Call<ArrayList<MyDataItem>>
 }
